@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CDN remplacé par fichier css
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- Bootstrap End -->
+    Bootstrap End -->
 
     <!-- GoogleFont-->
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
@@ -43,9 +44,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#portfolio">PORTFOLIO</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">CONTACT</a>
-                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -53,7 +51,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container containerCarousel">
         <!-- Section carousel-->
         <div id="carousel" class="carousel slide" data-ride="carousel">
 
@@ -109,20 +107,53 @@
 
 
         <!-- Section à propos -->
-        <section id="aPropos" style="padding-top:100px;padding-bottom:100px">
-            <div class="row">
+        <section id="aPropos">
+            <div class="row mb-4">
                 <div class="col-12">
-                    <h3 class="text-center" style="font-family: 'Open Sans Condensed', sans-serif;">Je suis Axelle,
+                    <h3 class="text-center">Je suis Axelle,
                         Développeur Web Junior. <br>
                         Avec mes compétences et avec mes lignes de code, je souhaites que le web devienne une
                         merveilleuse
                         aventure.</h3>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col mt-4 mb-4">
+                    <h3 class="text-center mb-5">Front-End</h3>
+                    <div class="skills">
+                        <label for="html">HTML5</label>
+                        <progress id="html" max="100" value="60">60%</progress>
+                    </div>
+                    <div class="skills">
+                        <label for="css">CSS3</label>
+                        <progress id="css" max="100" value="65">65%</progress>
+                    </div>
+                    <div class="skills">
+                        <label for="css">Bootstrap</label>
+                        <progress id="css" max="100" value="55">55%</progress>
+                    </div>
+                    <div class="skills">
+                        <label for="css">VueJs</label>
+                        <progress id="css" max="100" value="50">50%</progress>
+                    </div>
+                </div>
+                <div class="col mt-4 mb-4">
+                    <h3 class="text-center mb-5">Front-Back</h3>
+                    <div class="skills">
+                        <label for="css">JavaScript</label>
+                        <progress id="css" max="100" value="45">45%</progress>
+                    </div>
+                    <div class="skills">
+                        <label for="css">NodeJs</label>
+                        <progress id="css" max="100" value="45">45%</progress>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Section portfolio -->
-        <section id="portfolio" style="padding-top:100px;padding-bottom:100px">
+        <section id="portfolio">
 
             <div class="row">
                 <div class="col-12 mb-4">
@@ -137,7 +168,7 @@
                     <div class="card border-light shadow">
                         <div class="card-body">
                             <h4 class="card-title text-center text-info h-25">Transformez une maquette en site web</h4>
-                            <div class="card-text">
+                            <div class="card-text h-50">
                                 <ul>
                                     <li>Intégrer du contenu conformément à une maquette</li>
                                     <li>Mettre en place son environnement Front-End</li>
@@ -157,7 +188,7 @@
                         <div class="card-body">
                             <h4 class="card-title text-center text-info h-25">Dynamisez une page web avec des animations
                                 CSS</h4>
-                            <div class="card-text">
+                            <div class="card-text h-50">
                                 <ul>
                                     <li>Mettre en oeuvre des effets CSS graphiques avancés</li>
                                     <li>Assurer la cohérence graphique d'un site web</li>
@@ -175,7 +206,7 @@
                     <div class="card border-light shadow">
                         <div class="card-body">
                             <h4 class="card-title text-center text-info h-25">Optimisez un site web existant</h4>
-                            <div class="card-text">
+                            <div class="card-text h-50">
                                 <ul>
                                     <li>Assurer l'accessibilité d'un site web</li>
                                     <li>Réaliser une recherche des bonnes pratiques en développement web</li>
@@ -192,9 +223,9 @@
                     <div class="card border-light shadow">
                         <div class="card-body">
                             <h4 class="card-title text-center text-info h-25">Construisez un site e-commerce</h4>
-                            <div class="card-text">
+                            <div class="card-text h-50">
                                 <ul>
-                                    <li>Valider des données issues de sources externes</li>
+                                    <li class="li">Valider des données issues de sources externes</li>
                                     <li>Gérer des évènements JavaScript</li>
                                     <li>Créer un plan de test pour une application</li>
                                     <li>Interagir avec un web service avec JavaScript</li>
@@ -212,7 +243,7 @@
                         <div class="card-body">
                             <h4 class="card-title text-center text-info h-25">Construisez une API sécurisée pour une
                                 application d'avis gastronomiques</h4>
-                            <div class="card-text">
+                            <div class="card-text h-50">
                                 <ul>
                                     <li>Implémenter un modèle logique de données conformément à la réglementation</li>
                                     <li>Stocker des données de manière sécurisée</li>
@@ -227,7 +258,7 @@
                     <div class="card border-light shadow">
                         <div class="card-body">
                             <h4 class="card-title text-center text-info h-25">Créez un réseau social d'entreprise</h4>
-                            <div class="card-text">
+                            <div class="card-text h-50">
                                 <ul>
                                     <li>Authentifier un utilisateur</li>
                                     <li>Implémenter un stockage de données sécurisé en utilisant SQL</li>

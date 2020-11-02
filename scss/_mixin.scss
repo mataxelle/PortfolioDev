@@ -1,0 +1,7 @@
+@mixin screen-size($grid-breakpoint) {
+    @if map-has-key($map: $grid-breakpoints, $key: $grid-breakpoint) {
+        @media (max-width: map-get($grid-breakpoints, $grid-breakpoint)){
+            @content;
+        }
+    }
+}
