@@ -15,19 +15,19 @@ h1 {
     }
 }
 
-.skills, div .card-body {
+.card-body {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-progress {
-    height: 25px;
-}
-
-#aPropos, #portfolio  {
+#aPropos, #portfolio, #contact  {
     padding-top: 100px;
     padding-bottom: 50px;
+}
+
+#aPropos h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 #aPropos h3 {
