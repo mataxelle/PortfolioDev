@@ -6,7 +6,9 @@
 
 
 .containerCarousel {
-    margin-top: 35px;
+    @include screen-size-container(xl) {
+        margin-top: 35px;
+    }
 }
 
 h1 {

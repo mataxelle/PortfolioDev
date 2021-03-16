@@ -5,3 +5,11 @@
         }
     }
 }
+
+@mixin screen-size-container($container-max-width) {
+    @if map-has-key($map: $container-max-widths, $key: $container-max-width) {
+        @media (max-width: map-get($container-max-widths, $container-max-width)){
+            @content;
+        }
+    }
+}
