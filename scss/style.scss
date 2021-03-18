@@ -1,9 +1,12 @@
-@import "_variable_overrides.scss"; /* Emplacement des varibles pour couleur, font, ...*/
+@import "_variable_overrides.scss"; /* Emplacement des variables pour couleur, font, ...*/
 @import "_mixin.scss";
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";  /* Importation de bootstrap */
 
 
+body {
+    background-color: $body-bg;
+}
 
 .containerCarousel {
     @include screen-size-container(xl) {
@@ -15,6 +18,10 @@ h1 {
     @include screen-size(sm) {
         font-size: 23px;
     }
+}
+
+.btn {
+    color: $body-bg;
 }
 
 .card-body {
@@ -58,8 +65,4 @@ li {
     @include screen-size(sm) {
         font-size: 13px;
     }
-}
-
-a, div, h1, h2, h3, h4, span {
-    color: #000;
 }
