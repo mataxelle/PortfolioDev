@@ -1,0 +1,5 @@
+# Site libre à tous les robots
+User-Agent: *
+Disallow:
+
+Sitemap: https://mataxelle.github.io/PortfolioDev/Sitemap.xml
