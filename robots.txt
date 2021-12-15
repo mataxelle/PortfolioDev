@@ -2,4 +2,4 @@
 User-Agent: *
 Disallow:
 
-Sitemap: https://mataxelle.github.io/PortfolioDev/Sitemap.xml
+Sitemap: https://mataxelle.github.io/PortfolioDev/sitemap.xml
